@@ -19,6 +19,20 @@
 
 /*Clases*/
 
+.slider2 {
+    height: 80vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: url("../images/background/2.jpg") no-repeat center center fixed;
+}
+
+.imagen {
+    height: auto;
+    width: 400px;
+}
+
 .navbar-header {
     width: 100%;
     background-color: white;
@@ -47,6 +61,17 @@
     height: auto;
 }
 
+.slider_parent {
+    display: table;
+    height: 80vh;
+    width: 100%;
+}
+
+.slider_child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 
 /*Ids*/
 
@@ -70,9 +95,29 @@ body {
     background: url("../images/background/wall01.jpg") no-repeat center center fixed;
 }
 
+p {
+    font-size: 22px;
+}
 
-/*Media Querys*/
 
-@media (max-width: 780px) {}
+/*Medias Query*/
 
-@media (max-width: 384px) {}
+@media (max-width: 780px) {
+    p {
+        font-size: 18px;
+    }
+    #mapid {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 384px) {
+    p {
+        font-size: 16px;
+    }
+    .imagen {
+        width: 100%;
+        height: auto;
+    }
+}

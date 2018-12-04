@@ -13,6 +13,23 @@
     height: auto;
 }
 
+.img_full {
+    height: 100%;
+}
+
+@media (max-width: 780px) {
+    .mini {
+        width: 100%;
+        height: auto;
+    }
+    .img_full {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 384px) {}
+
 
 /* Create four equal columns that floats next to eachother */
 
