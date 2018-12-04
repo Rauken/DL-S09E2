@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-fixed-top">
+        <div class="navbar-header col-md-8">
+            <img src="" alt="">
+            <div class="navbar-text navbar-right links col-md-4">
+                <a href="index.html">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img src="images\fotos\0 (1).jpg" onclick="openModal();currentSlide(1)" class="hover-shadow mini">
+                </div>
+                <div class="column">
+                    <img src="images\fotos\0 (2).jpg" onclick="openModal();currentSlide(2)" class="hover-shadow mini">
+                </div>
+                <div class="column">
+                    <img src="images\fotos\0 (3).jpg" onclick="openModal();currentSlide(3)" class="hover-shadow mini">
+                </div>
+                <div class="column">
+                    <img src="images\fotos\0 (4).jpg" onclick="openModal();currentSlide(4)" class="hover-shadow mini">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides text-center">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images\fotos\0 (1).jpg" style="height:100%">
+                    </div>
+
+                    <div class="mySlides text-center">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images\fotos\0 (2).jpg" style="height:100%">
+                    </div>
+
+                    <div class="mySlides text-center">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images\fotos\0 (3).jpg" style="height:100%">
+                    </div>
+
+                    <div class="mySlides text-center">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images\fotos\0 (4).jpg" style="height:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images\fotos\0 (1).jpg" onclick="currentSlide(1)" alt="Nature">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images\fotos\0 (2).jpg" onclick="currentSlide(2)" alt="Snow">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images\fotos\0 (3).jpg" onclick="currentSlide(3)" alt="Mountains">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images\fotos\0 (4).jpg" onclick="currentSlide(4)" alt="Lights">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript y JQuery-->
+    <div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="leaflet/leaflet.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/gallery.js"></script>
+    </div>
+</body>
+
+</html>

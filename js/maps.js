@@ -5,7 +5,6 @@ var coords = {
     parcela: '-32.722666, -71.220868',
 };
 $(document).ready(function() {
-    console.log(coords['parcela'])
     generarMapa();
     //Genera el primer mapa
     function generarMapa() {
